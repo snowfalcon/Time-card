@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+p.date {
+	font-size: 3em;
+	margin: 20px 0px;
+	text-align: center
+}
+
+p.time {
+	font-size: 6em;
+	margin: 10px 0px;
+	text-align: center
+}
+
+p.word {color: #FFFFFF;}
+
+p.hello{
+	font-size: 3em;
+	margin: 10px 0px;
+	text-align: center
+}
+
+#box {
+	width: 150px;
+	height: 80px;
+	border: 1px solid #4c4c4c;
+	padding: 12px;
+	text-align: center;
+}

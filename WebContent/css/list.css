@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+tr.saturday {
+	background-color: #7FFFD4
+}
+
+tr.sunday {
+	background-color: #FF6347;
+}
+
+.nav__item {
+	width: 500px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #CCC;
+}
+
+.invis {
+	visibility: hidden;
+	font-size: 0%;
+}

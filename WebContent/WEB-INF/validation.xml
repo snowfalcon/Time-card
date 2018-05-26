@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE form-validation PUBLIC
+     "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN"
+     "http://jakarta.apache.org/commons/dtds/validator_1_3_0.dtd">
+<form-validation>
+	<formset>
+		<form name="loginForm">
+			<field property="inputId" depends="required">
+				<arg key="field.inputId" />
+			</field>
+			<field property="inputId" depends="minlength">
+				<arg key="field.inputId" />
+				<arg key="${var:minlength}" resource="fasle" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>5</var-value>
+				</var>
+			</field>
+			<field property="inputId" depends="maxlength">
+				<arg key="field.inputId" />
+				<arg key="${var:maxlength}" resource="fasle" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>5</var-value>
+				</var>
+			</field>
+			<field property="inputId" depends="mask">
+				<arg key="field.inputId" />
+				<arg key="${var:mask}" resource="fasle" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="timecardForm" />
+		<form name="listForm" />
+		<form name="revisionForm" />
+	</formset>
+</form-validation>
